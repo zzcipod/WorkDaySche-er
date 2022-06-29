@@ -6,9 +6,13 @@ let timeclock = function() {
 timeclock()
 setInterval(timeclock, 1000)
 
+var saveButton=$(".saveBtn")
 
-
-
+saveButton.on('click', function(){
+    timePastfuture();
+    console.log($(this).siblings(".description".val()))
+}
+)
 
 
 
